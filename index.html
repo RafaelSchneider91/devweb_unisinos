@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocDent</title>
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
 </head>
 <body>
-    <class= class="container">
-        <div></div>
+    <div class="container">
         <header>
             <div class="logo">
                 <img src="imagens/logo.png" alt="Logo">
@@ -21,34 +21,33 @@
                 <li><a href="planos.html">Serviços</a></li>
                 <li><a href="#contact">Contato</a></li>
                 <a class="btnlogin" href="#criarconta">Login</a>
-                <!-- <button class="btnlogin"><a href="#Login">Login</a></button> -->
             </ul>
         </header>
         <section class="sectionradius sectionbackground" >
             <div class="grid2colums">
-                <div class="main1">
+                <div class="main">
                     <h2>
                         Uma Plataforma Completa para Profissionais de Odontologia
                     </h2>
                     <h4>
                         Inovação e Excelência para Transformar o Seu Consultório Odontológico!!!
                     </h4>
-                    <div class="btn">
+                    <div class="c-btn">
                         <div> 
-                            <a href="#criarconta">Criar Conta</a>
+                            <a class="c-btn--azul" href="#criarconta">Criar Conta</a>
                         </div>
                         <div> 
-                            <a href="#contato">Contato</a>
+                            <a class="c-btn--azul" href="#contato">Contato</a>
                         </div>
                     </div>
                     
                 </div>
-               <div class="divcab">
+            <div class="divcab">
                     <img class="img1" src="imagens/Img2.png" alt="">
-               </div>
+            </div>
                     
                 
-                               
+                            
             </div> 
         </section>
         <section class="sectionradius">
@@ -82,8 +81,8 @@
                             </h4>
                             <p class="text-align-center">
                                 Acreditamos que o sucesso é construído em conjunto. Nossa equipe de suporte está sempre disponível para ajudar você a
-                                 tirar o máximo proveito da nossa plataforma. Oferecemos treinamentos, atendimento personalizado e soluções adaptadas 
-                                 às suas necessidades específicas.
+                                tirar o máximo proveito da nossa plataforma. Oferecemos treinamentos, atendimento personalizado e soluções adaptadas 
+                                às suas necessidades específicas.
                             </p>
                         </div>
                         <div>
@@ -145,14 +144,14 @@
 
                 </div>
                 
-               
+            
                 
                 <img src="imagens/Img3.png" alt="">
 
 
             </div>
             
-           
+        
             
         </section>
         <section class="ultimasecao sectionradius">
@@ -168,12 +167,12 @@
                     e à otimização da gestão do seu negócio.
                 </p>
             </div>
-            <div class="btn2">
+            <div class="c-btn">
                 <div> 
-                    <a href="#criarconta">Criar Conta</a>
+                    <a class="c-btn--branco" href="#criarconta">Criar Conta</a>
                 </div>
                 <div> 
-                    <a href="#contato">Contato</a>
+                    <a class="c-btn--branco" href="#contato">Contato</a>
                 </div>
             </div>
         </section>
@@ -231,11 +230,17 @@
         
     </div>
     
-</body>
+    <!-- Botão de Voltar ao Topo -->
+    <button onclick="topFunction()" id="topBtn" title="Voltar ao topo">⬆️</button>
+
+    <script src="js/topBtn.js"></script>
+
     <div class="borderfooter">
         <div class="autoria ">
             <p>Desenvolvido por Rafael Schneider &#127919</p>
         </div>
     </div>
+</body>
+    
     
 </html>
