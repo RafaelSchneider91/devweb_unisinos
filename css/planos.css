@@ -35,8 +35,6 @@ section  {
     gap: 36px;
     padding: 20px 140px;
     border-radius: 12px;
-    /* height: 550px; */
-
 
 
 }
@@ -55,7 +53,9 @@ section  {
 
 .c-title__componente{
     color: var(--azul-color);
-    padding: 4px;
+    padding: 0px;
+    margin-block-start: 32px !important; 
+    margin-block-end: 0px !important; 
     width: 200px;
     font-size: 36px;
 
@@ -66,35 +66,15 @@ section  {
     flex-direction: row;
     margin: 0;
     padding: 0;
+    height: 100px;
+
 }
 
-.c-card__preco h4 {
-    background-color: red;
+.c-card-size h4 {
+    /* background-color: red; */
     font-size: 80px;
+    margin-block-start: 0px !important; 
+    margin-block-end: 0px !important; 
 
 }
 
-/* .c-card__preco{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-}
-
-.c-card__preco p {
-    font-size: 26px;
-    font-weight: bold;
-    padding-bottom: 50px;
-}
-
-.c-card__preco h4 {
-    background-color: red;
-    font-weight:900;
-    font-size: 80px;
-
-}
-
-.c-card-link{
-    background-color: red;
-    padding: 20px;
-} */
