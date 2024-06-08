@@ -1,12 +1,12 @@
-// script.js
-// Mostra o botão quando o usuário rolar 20px para baixo
+// chama a scrollFunction
 window.onscroll = function() {
     scrollFunction();
 };
 
+//Exibe o btn para ser clicado apos descer 500px
 function scrollFunction() {
     const topBtn = document.getElementById("topBtn");
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.documentElement.scrollTop > 500) {
         topBtn.style.display = "block";
     } else {
         topBtn.style.display = "none";
@@ -15,5 +15,5 @@ function scrollFunction() {
 
 // Rola a página para o topo quando o botão for clicado
 function topFunction() {
-    document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+    document.documentElement.scrollTop = 0;
 }

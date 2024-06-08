@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-/* @import url("color.css"); */
+@import url("color.css");
 
 html,
 body {
@@ -79,8 +79,8 @@ section {
 
 .c-btn {
 	display: flex;
-	justify-content: center; /* Centraliza os botões horizontalmente */
-	gap: 10px; /* Espaço entre os botões */
+	justify-content: center; 
+	gap: 10px;
 }
 
 .c-btn a {
@@ -112,7 +112,7 @@ section h2 {
 }
 
 .divcab {
-	/* background-color: red; */
+
 	justify-self: end;
 	border-radius: 8px;
 }
@@ -142,12 +142,4 @@ h3 {
 	text-align: center;
 }
 
-.borderfooter {
-	border-top: 1px solid var(--dark-color);
-}
 
-.autoria p {
-	text-align: center;
-	margin: 8px;
-	font-size: 12px;
-}
