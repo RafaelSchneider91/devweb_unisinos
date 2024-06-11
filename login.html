@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DocDent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:  #e7e7e7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 92%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #133f9c;
+            border-radius: 4px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0b5874;
+            color: #fff;
+            border: none;
+            border-radius: 7%;
+            cursor: pointer;
+        }
+        
+        
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #133f9c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login DocDent</h2>
+        <form>
+            <input type="text" placeholder="login" id="login">
+            <input type="password" placeholder="senha" id="senha">
+            <button type="submit" onclick="logar(); return false;">Entrar</button>
+        </form>
+        <a href="register.html">Criar Conta</a>
+    </div>
+    <script>
+        function logar() {
+            var login = document.getElementById('login').value;
+            var senha = document.getElementById('senha').value;
+            if (login === "admin" && senha === "admin") {
+                alert('Login realizado com sucesso');
+                location.href = "index.html";
+            } else {
+                alert('Usuário e senha incorretos');
+            }
+        }
+    </script>
+</body>
+</html>
+
