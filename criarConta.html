@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DocDent | Criar Conta</title>
-    <link rel="stylesheet" href="css/login.css" />
-  </head>
-  <body>
-    <div class="login-container">
-      <h2>Criar conta DocDent</h2>
-      <form>
-        <input type="text" placeholder="email" id="login" />
-        <input type="password" placeholder="senha" id="senha" />
-        <input type="password" placeholder="repetir senha" id="repetirSenha" />
-        <button type="submit" onclick="logar(); return false;">Entrar</button>
-      </form>
-    </div>
-    <script>
-      function logar() {
-        var email = document.getElementById("login").value;
-        var senha = document.getElementById("senha").value;
-        var repetirSenha = document.getElementById("repetirSenha").value;
-        var validRegex =
-          /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>DocDent | Criar Conta</title>
+		<link
+			rel="stylesheet"
+			href="css/login.css" />
+	</head>
+	<body>
+		<div class="login-container">
+			<h2>Criar conta DocDent</h2>
+			<form>
+				<input
+					type="text"
+					placeholder="email"
+					id="login" />
+				<input
+					type="password"
+					placeholder="senha"
+					id="senha" />
+				<input
+					type="password"
+					placeholder="repetir senha"
+					id="repetirSenha" />
+				<button
+					type="submit"
+					onclick="criarConta(); return false;">
+					Entrar
+				</button>
+			</form>
+		</div>
+		<script>
+			function criarConta() {
+				var email = document.getElementById("login").value
+				var senha = document.getElementById("senha").value
+				var repetirSenha = document.getElementById("repetirSenha").value
+				var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
 
-        if (!email.match(validRegex)) {
-          alert("Email inválido");
-        } else if ((senha === "") | (senha !== repetirSenha)) {
-          alert("Senha inválida");
-        } else {
-          alert("Usuário criado!");
-          location.href = "index.html";
-        }
-      }
-    </script>
-  </body>
+				if (!email.match(validRegex)) {
+					alert("Email inválido")
+				} else if ((senha === "") | (senha !== repetirSenha)) {
+					alert("Senha inválida")
+				} else {
+					alert("Usuário criado!")
+					location.href = "index.html"
+				}
+			}
+		</script>
+	</body>
 </html>
